@@ -1,16 +1,9 @@
 #include <iostream>
-#include <vector>
 #include <string>
 
-using namespace std;
-
-int main()
-{
-    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
-
-    for (const string& word : msg)
-    {
-        cout << word << " ";
-    }
-    cout << endl;
+int main(){
+    std::string user_name;
+    std::cout<<"What is your name?";
+    std::cin>> user_name;
+    std::cout<<"hello, "<<user_name<<"!"<<std::endl;
 }
